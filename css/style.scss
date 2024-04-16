@@ -1,0 +1,417 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// phone
+body{
+overflow-x: hidden;
+font-family: sans-serif, arial, inter;
+}
+.mobile-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.hamburger{
+		height: 4rem;
+		width: 4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 5px;
+		border: 2px solid green;
+		.line{
+			height: 2px;
+			width: 70%;
+			background-color: green;
+			
+		}
+		
+	}
+}
+
+.pc-nav{
+	display: none;
+}
+.benefits{
+margin-bottom: 60px;	
+.center-items{
+		text-align: center;
+	}
+	.card{
+		background-color: #ccc;
+		padding: 1rem;
+		border-radius: 15px;
+		ol{
+		list-style-type: decimal;
+		padding-left: 1rem;
+		}
+	}
+}
+// banner section
+.banner{
+	background-color: #ccc;
+	.container{
+		
+		.row{
+            
+			.col-md-6{
+				margin: 2rem 0;
+				align-items: center;
+				text-align: center;
+				h1{
+					font-weight: 900;
+					margin: 3rem;
+				}
+				img{
+					width: 100%;
+				}
+				button{
+					background-color: green;
+					border: none;
+					color: white;
+					border-radius: 5px;
+					padding: 6px 26px;
+					margin: 1rem;
+				}
+				
+					
+				
+			}
+		}
+	}
+}
+.mission{
+	background: url("../images/colleagues-working-together-environment-project\ \(1\)\ 1.png");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
+	.overlay{
+		background-color: rgb(0, 0, 0, 0.533);
+		.container{
+			padding: 25px;
+				h2{
+					margin: 15px 0;
+					color: #fff;
+				}
+				p{
+					color: #fff;
+				}
+		}
+	}
+	
+	}
+	
+
+.services{background-color: #ccc;
+	.container{
+		h2{
+			font-weight: 700;
+		}
+		.row{
+		.col-md-4{
+			img{
+				width: 100%;
+			}
+			span{
+				color: green;
+			}
+		}
+	}
+	}
+	
+}
+.questions{
+	margin-bottom: 3%;
+	.container {
+		h2{
+			font-weight: 800;
+		}
+	}
+}
+form{
+	border: 1px solid #ddd;
+	padding: 1rem;
+	border-radius: 5px;
+	background-color: #ccc;
+	
+	input{
+		width: 100%;
+		padding: 8px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		margin-bottom: 3%;
+		
+	}
+	button{
+		width: 100%;
+		height: 3rem;
+		background-color: white;
+		border: none;
+		border-radius: 6px;
+		margin-top: 3%;
+	}
+	textarea{
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+}
+.footer{
+	background-color: #ccc;
+	.container{
+		align-items: center;
+		padding: 20px;
+		gap: 15px;
+		text-align: center;
+		input{
+			width: 70%;
+			padding: 8px;
+			border: none;
+			border-radius: 5px;
+
+		}
+		button{
+			width: 6rem;
+			height: 3rem;
+			background-color: green;
+			font-weight: 500;
+			border: none;
+			margin: 8px 0;
+			color: white;
+		}
+
+	}
+}
+.footer-end{
+		background-color: green;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		text-align: center;
+		justify-content: center;
+		height: 4vh;
+		p{
+			margin-top: 15px;
+		}
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+.mobile-nav{
+	display: none;
+}
+
+.pc-nav{
+	display: block;
+.flex-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+ul{
+	display: flex;
+	gap: 100px;
+	color: green;
+	align-items: center;
+	font-weight: 700;
+	
+}
+button{
+	background-color: green;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	// padding: 6px 20px;
+	width: 90px;
+	height: 45px;
+}
+
+	}
+}
+.benefits{
+	.center-items{
+		text-align: left;
+	}
+	#heading{
+		text-align: center;
+		margin-bottom: 2em;
+	}
+	
+}
+// banner section
+.banner{
+
+.container{
+    .row{
+	.col-md-6{
+	h1{
+	margin: 1rem  20px 0;
+	font-weight: 900;
+	font-size: x-large;
+	
+	}
+	p{
+	font-size: small;	
+}
+button{
+	margin: 0;
+}
+}
+}
+}
+}
+ }
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.banner{
+		.container{
+			.row{
+			.col-md-6{
+				h1{
+					font-size: xx-large;
+					margin: 2rem 0;
+				}
+				p{
+					margin-bottom: 1rem;
+				}
+			}	
+			}
+			
+		}
+	   }
+	 }
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+   .pc-nav{
+	.flex-container{
+		.ul{
+			gap: 85px;
+		}
+	}
+   } 
+   .banner{
+	background-color: #ccc;
+	.banner-text{
+		text-align: left !important;
+
+	p{
+		width: 80%;
+		margin-bottom: 2   em !important;
+	}
+	}
+	.container{
+		.row{
+		.col-md-6{
+			h1{
+			font-size: xx-large;
+			margin-bottom: 2rem;
+			color: black;
+			}
+			p{
+			font-size: larger;
+			
+			}
+			button{
+				margin: 2rem 0;
+			}
+		}	
+		}
+		
+	}
+   }
+   .footer{
+	input{
+		width: 35% !important;
+	}
+   }
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
