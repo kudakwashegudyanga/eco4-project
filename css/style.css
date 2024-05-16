@@ -57,7 +57,53 @@ body {
   font-family: sans-serif, arial, inter;
 }
 
+.chido .pc-nav {
+  display: block !important;
+}
+
+.pc-nav {
+  display: none !important;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20%;
+}
+.pc-nav ul {
+  height: 100%;
+  gap: 9rem;
+  display: flex;
+  flex-direction: column;
+}
+.pc-nav button {
+  border: none;
+  border-radius: 8px;
+  background-color: green;
+  padding: 5px;
+  color: white;
+}
+.pc-nav img {
+  display: none;
+}
+
+.benefits {
+  margin-bottom: 60px;
+}
+.benefits .center-items {
+  text-align: center;
+}
+.benefits .card {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.benefits .card ol {
+  list-style-type: decimal;
+  padding-left: 1rem;
+}
+
 .mobile-nav {
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,26 +122,6 @@ body {
   height: 2px;
   width: 70%;
   background-color: green;
-}
-
-.pc-nav {
-  display: none;
-}
-
-.benefits {
-  margin-bottom: 60px;
-}
-.benefits .center-items {
-  text-align: center;
-}
-.benefits .card {
-  background-color: #ccc;
-  padding: 1rem;
-  border-radius: 15px;
-}
-.benefits .card ol {
-  list-style-type: decimal;
-  padding-left: 1rem;
 }
 
 .banner {
@@ -250,6 +276,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .pc-nav {
     display: block;
+    height: 7rem !important;
   }
   .pc-nav .flex-container {
     display: flex;
@@ -258,11 +285,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     align-items: center;
   }
   .pc-nav .flex-container ul {
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
     gap: 100px;
     color: green;
     align-items: center;
     font-weight: 700;
+  }
+  .pc-nav .flex-container img {
+    display: block;
   }
   .pc-nav .flex-container button {
     background-color: green;
